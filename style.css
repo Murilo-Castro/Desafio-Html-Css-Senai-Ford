@@ -1,0 +1,330 @@
+html, body{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+/*css do Header*/
+
+.cabecalho{
+    position: relative;
+    margin: 5px 10px;
+}
+
+.cabecalho img{
+    width: 200px;
+    transition: 1s all;
+}
+
+.cabecalho img:hover{
+    opacity: 0.7;
+}
+
+nav{
+	position: absolute;
+    top: 30px;
+    left: 40%;
+}
+
+nav li{
+    display: inline;
+    margin: auto 5px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #1351d8;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+nav a:hover{
+    font-size: 19px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/*css do contreudo principal*/
+
+.principal, .produtosLancamento, .contato{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal img{
+    width: 100%;
+}
+
+.principal img:hover{
+    opacity: 0.9;
+}
+
+.principal p{
+    text-align: center;
+    padding: 2em 2em 2em 2em;
+}
+
+.principal a{
+    text-decoration: none;
+    color: #1351d8;
+}
+
+.principal a:hover{
+    font-size: 17px;
+    color:#1b357e;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/*css do lançamento*/
+
+.videoLancamento{
+    background: black;
+}
+
+.videoLancamento{
+    text-align: center;
+}
+
+.videoLancamento iframe:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.tabelaProdutos{
+    margin: 2em 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.produtosLancamento th{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produtosLancamento a{
+    text-decoration: none;
+    color: #1351d8;
+}
+
+.produtosLancamento a:hover{
+    font-size: 16px;
+}
+
+.comparar{
+    margin: 20px 30%;
+	width: 40%;
+	padding: 15px 5px;
+	background: #1351d8;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.comparar:hover{
+	background: #1b357e;
+	transform: scale(1.2);
+}
+
+/*css do contato*/
+
+.contato{
+    margin-bottom: 20px;
+}
+.contato img{
+    width: 50%;
+    margin-right: 60px;
+    margin: 25% 25px;
+}
+
+.formulario{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.formulario label{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.inputPadrao{
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	width: 100%;
+    border-radius: 5px;
+}
+
+.radioContato{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+legend{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.seletorPeriodo{
+    padding: 10px 25px;
+	width: 100%;
+    border-radius: 5px;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+    margin: 20px 0;
+	width: 100%;
+	padding: 15px 0;
+	background: #1351d8;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background: #1b357e;
+	transform: scale(1.2);
+}
+
+.rotulo:after{
+	content: "*";
+    color: red;
+}
+
+/*css do footer*/
+
+footer{
+    position: relative;
+    flex-shrink: 0;
+    background-color: #1b357e;
+    padding: 10px 10px;
+}
+
+.redesSociais p{
+    display: inline;
+    color: #ffffff;
+    vertical-align: super;
+    margin-left: 20px;
+}
+
+.listaRedesSociais, .listaRedesSociais li{
+    display: inline;
+    padding: 0 5px 0 0;
+}
+
+.listaRedesSociais img{
+    width: 40px;
+}
+
+.caixaRodape{
+    position: relative;
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imgRodape{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.copyright{
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 939px) {
+
+	.principal, .produtosLancamento, .contato, .formulario, .tabelaProdutos, .videoLancamento, .rodape, .caixaRodape{
+		width: auto;
+        padding: 10px;
+	}
+
+    h1{
+		text-align: center;
+        margin-top: 20px;
+	}
+
+    nav{
+		position: static;
+		text-align: center;
+        margin: 20px 0 0 10px;
+	}
+
+    .principal{
+        margin: 25% 0;
+    }
+
+    .tabelaProdutos{
+        margin: 0 auto;
+    }
+
+    .tabelaProdutos th{
+        display: none;
+    }
+
+    .tabelaProdutos tbody td {
+        display: block;
+    }
+
+    .formulario{
+        display: block;
+        margin: 0 10px;
+    }
+    
+    .contato img{
+        margin: 0 25%;
+    }
+
+    .inputPadrao{
+        width: 80%;
+    }
+    .enviar:hover{
+        transform: none;
+    }
+
+    footer{
+        padding: 0;
+    }
+
+    .redesSociais{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .copyright{
+        margin-top: 5px;
+        position: static;
+        text-align: center;
+    }
+
+    .imgRodape{
+        position: static;
+        margin: 0 auto;
+        display: block;
+    }
+}

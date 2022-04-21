@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>*projeto Cimatec Front-end*</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="cabecalho">
+
+            <h1><a href="index.html"><img src="./img/logo-ford-256.png" alt="Logo da Ford"></a></h1>
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lancamento.html">Lançamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="contato">
+            
+            <img src="./img/storm.jpg" alt="Ford ranger storm">
+
+            <form class="formulario">
+
+                <label class="rotulo" for="nomeSobrenome">Seu Nome e Sobrenome</label>
+                <input class="inputPadrao" type="text" id="nomeSobrenome" required placeholder="Nome Sobrenome">
+
+                <label class="rotulo" for="email">E-mail</label>
+                <input class="inputPadrao" type="email" id="email"  required
+                    placeholder="seuemail@seudominio.com">
+
+                <label class="rotulo" for="telefone">Telefone</label>
+                <input class="inputPadrao" type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+
+                <label class="rotulo" for="mensagem">Mensagem</label>
+                <textarea class="inputPadrao" cols="70" rows="5" id="mensagem" required></textarea>
+
+                <fieldset>
+
+                    <legend class="radioContato">Como prefere nosso contato</legend>
+
+                    <label for="radioEmail"><input type="radio" name="contato" value="email"
+                            id="radioEmail">E-mail</label>
+
+                    <label for="radioTelefone"><input type="radio" name="contato" value="telefone"
+                            id="radioTelefone">Telefone</label>
+
+                    <label for="radioWathsapp"><input type="radio" name="contato" value="watsapp" id="radioWathsapp"
+                            checked>WatsApp</label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Qual horaio prefere ser atendido?</legend>
+
+                    <select class="seletorPeriodo">
+
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+
+                    </select>
+
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por
+                    email?</label>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades via Wathsapp?</label>
+
+                <input class="enviar" type="submit" value="Enviar formulario">
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="rodape">
+
+            <div class="redesSociais">
+                <P>Redes sociais:</P>
+
+                <ul class="listaRedesSociais">
+
+                    <li> <a href="https://www.facebook.com/FordBrasil" target="_blank"><img src="./img/facebook-50.png"
+                                alt="Imagem do link para Facebook"></a></li>
+                    <li> <a href="https://www.youtube.com/user/fordbrasil" target="_blank"><img
+                                src="./img/youtube-squared-50.png" alt="Imagem do link para Youtube"></a></li>
+                    <li><a href="https://www.instagram.com/fordbrasil/" target="_blank"><img
+                                src="./img/instagram-logo-50.png" alt="Imagem do link para Instagram"></a></li>
+
+                </ul>
+
+            </div>
+
+            <img class="imgRodape" src="./img/ford-96.png" alt="Logo do rodapé Ford">
+
+            <p class="copyright">&copy; Ford Brasil</p>
+
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
